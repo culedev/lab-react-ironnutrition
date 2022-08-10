@@ -5,7 +5,7 @@
 import { Divider, Input } from 'antd';
 
 // Iteration 4
-function AddFoodForm(props) {
+function AddFood(props) {
   return (
     <form>
       <Divider>Add Food Entry</Divider>
@@ -14,17 +14,17 @@ function AddFoodForm(props) {
       <Input value={undefined} type="text" onChange={() => {}} />
 
       <label>Image</label>
-      {/* render antd <Input /> type="text" here */}
+      <Input type="text" /> 
 
       <label>Calories</label>
-      {/* render antd <Input /> type="number" here */}
+      <Input type="number" />
 
       <label>Servings</label>
-      {/* render antd <Input /> type="number" here */}
+      <Input type="number" />
 
       <button type="submit">Create</button>
     </form>
   );
 }
 
-export default AddFoodForm;
+export default AddFood;
