@@ -24,7 +24,7 @@ function App() {
     const filteredFood = foodList.filter(
       (eachFood, i) => eachFood.name + i !== id
     );
-    filteredFood.length === 0 ? setIsEmpty(true) : setIsEmpty(false)
+    filteredFood.length === 0 ? setIsEmpty(true) : setIsEmpty(false);
     setFoodList(filteredFood);
   };
 
@@ -33,9 +33,6 @@ function App() {
   };
 
   const isShow = isShowForm ? 'Hide Form' : 'Add New Food';
-
- 
-  
 
   return (
     <div className="App">
